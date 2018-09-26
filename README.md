@@ -7,8 +7,10 @@ Clone this repository on your local machine and get started. Please refer below 
 https://help.github.com/articles/cloning-a-repository/
 
 Prerequisites
-- Python3
-
+ - Python3
+ - PyYAML pacakges
+    Please refer below link for more details
+    https://pyyaml.org/wiki/PyYAMLDocumentation
 - Paramiko - A Python implementation of SSHv2
    Can be install with pip
    pip install paramiko
