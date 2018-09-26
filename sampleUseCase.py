@@ -3,7 +3,6 @@ import yaml
 import time
 import paramiko
 
-
 def connect_traffic_gen(params):
 	'''
 	This function is to connect to traffic generator and run traffic
@@ -20,7 +19,6 @@ def connect_traffic_gen(params):
 	stdin,stdout,stderr = traffic_gen.exec_command('cd trex/v2.24;./runtrex')
 	time.sleep(60)
 	return True
-
 
 def connect_csr1000v(params):
 	'''
@@ -58,9 +56,7 @@ if status:
 else:
 	print('\nTraffic generator is not running...please give it a try again...')
 	
-
 status,output = connect_csr1000v(params)
-
 if status:
 	print('\nTraffic test Passed...\n\nThe RX/TX counters for interfaces got updated...\n\n{}'.format(output))
 else:
@@ -72,6 +68,3 @@ traffic_gen.close()
 csr1000v = paramiko.SSHClient()
 csr1000v.close()
 print('\nTest Done !!! SSH connection closed for csr1000v and traffic_gen')
-
-
-
