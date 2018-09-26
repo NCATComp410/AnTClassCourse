@@ -1,8 +1,7 @@
 Class Project - North Carolina A&T State University
-This demonstrates the sample usecases of router and traffic generator deploy in the AWS cloud.
+This demonstrates the sample usecases of router and traffic generator deploy in AWS cloud.
 
 Getting Started
-
 Clone this repository on your local machine and get started. Please refer below link if any help needed on Cloning a repository.
 https://help.github.com/articles/cloning-a-repository/
 
@@ -18,10 +17,8 @@ Prerequisites
 Running the script
 You have to be inside the cloned repository and can simply run like any other python script.
 
-
-Authors
+Author
 Sachin Daware
-
 
 Support
 Please reach out to me at sdaware@cisco.com for any queries.
