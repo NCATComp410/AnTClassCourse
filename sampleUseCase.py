@@ -19,7 +19,6 @@ def connect_traffic_gen(params):
 	print('\nConnected to traffic generator...preparing to run traffc...')
 	stdin,stdout,stderr = traffic_gen.exec_command('cd trex/v2.24;./runtrex')
 	time.sleep(90)
-	traffic_gen.close()
 	return True
 
 
@@ -38,7 +37,6 @@ def connect_csr1000v(params):
 	
 	print('\nConnected to csr1000v...checking for traffic on interfaces...')
 	stdin,stdout,stderr = csr1000v.exec_command('show interfaces summary')
-	csr1000v.close()
 	output = stdout.readlines()
 	pattern = r'.*?GigabitEthernet[\d+](\s*\d+){4}\s*([1-9]\d.*)'
 	output = str(output)
@@ -66,4 +64,6 @@ if status:
 	print('\nTraffic test Passed...\n\nThe RX/TX counters for interfaces got updated...\n\n{}'.format(output))
 else:
 	print('\nTraffic test failed...\n{}'.format(output))
+
+
 
