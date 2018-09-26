@@ -1,0 +1,2 @@
+PyYAML==3.11
+paramiko==2.4.2
