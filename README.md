@@ -9,15 +9,17 @@ https://help.github.com/articles/cloning-a-repository/
 
 Prerequisites:
 
-Use below command to get all the required packages to run sample tests.
+- Python version 3
 
-pip install -r requirements.txt
+- Use below command to get all the required packages to run sample tests.
+
+  pip install -r requirements.txt
  
-More info about packages used.
- PyYAML pacakges
- https://pyyaml.org/wiki/PyYAMLDocumentation
- Paramiko - A Python implementation of SSHv2
- http://www.paramiko.org/installing.html
+- More info about packages used.
+  PyYAML pacakges
+  https://pyyaml.org/wiki/PyYAMLDocumentation
+  Paramiko - A Python implementation of SSHv2
+  http://www.paramiko.org/installing.html
 
 Running the script:
 
