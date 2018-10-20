@@ -42,6 +42,7 @@ def connect_traffic_gen(params,retries):
                 traffic_gen.close()
                 return True
             else:
+                traffic_gen.close()
                 return False
 
         except Exception as e:
